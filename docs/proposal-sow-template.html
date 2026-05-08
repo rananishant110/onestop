@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal / Statement of Work - Wholesale Ordering Platform</title>
+  <style>
+    :root {
+      --primary: #1f4b99;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #d1d5db;
+      --bg: #f8fafc;
+      --section: #eef4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 960px;
+      margin: 32px auto;
+      background: #fff;
+      padding: 40px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 {
+      color: var(--primary);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 22px;
+      border-bottom: 2px solid var(--section);
+      padding-bottom: 6px;
+      margin-top: 28px;
+    }
+    h3 {
+      color: var(--primary);
+      font-size: 18px;
+      margin-top: 18px;
+    }
+    p, li { font-size: 15px; }
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .field {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 54px;
+      background: #fff;
+    }
+    .callout {
+      margin: 20px 0;
+      padding: 14px 16px;
+      background: #f9fbff;
+      border-left: 4px solid var(--primary);
+      color: var(--text);
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .phase {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 16px;
+      background: #fff;
+    }
+    .pricing-box {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 12px;
+      background: #fafafa;
+    }
+    .signature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 120px;
+    }
+    .line {
+      display: block;
+      border-bottom: 1px solid var(--border);
+      min-height: 24px;
+      margin-top: 6px;
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        max-width: none;
+      }
+      .phase, .pricing-box, .sign-box { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Proposal / Statement of Work</h1>
+    <div class="subtitle">Wholesale Ordering Platform for Indian Food and Non-Food Products</div>
+
+    <div class="meta">
+      <div class="field"><strong>Client:</strong> <span class="line"></span></div>
+      <div class="field"><strong>Prepared By:</strong> <span class="line"></span></div>
+      <div class="field"><strong>Date:</strong> <span class="line"></span></div>
+      <div class="field"><strong>Project Name:</strong> <span class="line"></span></div>
+    </div>
+
+    <h2>1. Project Overview</h2>
+    <p>
+      This proposal outlines the scope, approach, estimated timeline, and commercial terms for designing and developing a wholesale ordering platform for the client. The objective is to create a digital solution that allows wholesale customers to browse products, view pricing, place orders, and manage repeat purchases more efficiently.
+    </p>
+    <p>
+      Depending on the final approved scope, the solution may include a customer-facing web application, optional mobile applications, and an internal admin dashboard for managing products, pricing, orders, customers, and operations.
+    </p>
+
+    <div class="callout">
+      Recommended approach: begin with an MVP focused on the most critical ordering workflows, then expand into mobile apps, deeper integrations, and advanced automation in later phases.
+    </div>
+
+    <h2>2. Project Objectives</h2>
+    <ul>
+      <li>Simplify the wholesale ordering process for customers</li>
+      <li>Reduce manual order handling via phone, WhatsApp, and email</li>
+      <li>Improve ordering accuracy and reduce operational overhead</li>
+      <li>Support repeat purchasing and account-based wholesale ordering</li>
+      <li>Provide internal visibility into orders, customers, and product management</li>
+      <li>Create a scalable digital platform for future growth</li>
+    </ul>
+
+    <h2>3. Proposed Solution</h2>
+    <p>Based on discovery and scope confirmation, the proposed platform may include:</p>
+    <ul>
+      <li><strong>Customer Ordering Portal (Web)</strong></li>
+      <li><strong>Mobile Application</strong> (optional / later phase)</li>
+      <li><strong>Admin Dashboard</strong></li>
+      <li><strong>Order Management System</strong></li>
+      <li><strong>Customer-specific Pricing</strong></li>
+      <li><strong>Delivery / Pickup Scheduling</strong></li>
+      <li><strong>Invoice / Payment Visibility</strong></li>
+      <li><strong>Third-party Integrations</strong> such as accounting, ERP, inventory, or payment systems</li>
+    </ul>
+
+    <h2>4. Scope of Work</h2>
+
+    <div class="phase">
+      <h3>Phase 1 — Discovery and Planning</h3>
+      <p>Includes requirements gathering, process analysis, feature prioritization, and solution planning.</p>
+      <ul>
+        <li>Stakeholder meetings</li>
+        <li>Requirements gathering</li>
+        <li>Business workflow mapping</li>
+        <li>MVP definition</li>
+        <li>Technical recommendations</li>
+        <li>Phased roadmap</li>
+      </ul>
+      <p><strong>Deliverables:</strong> Requirements summary, feature list, user flows, MVP definition, and implementation roadmap.</p>
+    </div>
+
+    <div class="phase">
+      <h3>Phase 2 — UI/UX Design</h3>
+      <p>Includes design of the customer and admin experience.</p>
+      <ul>
+        <li>Wireframes</li>
+        <li>Responsive layout planning</li>
+        <li>High-fidelity UI screens</li>
+        <li>Review and feedback rounds</li>
+      </ul>
+      <p><strong>Deliverables:</strong> Approved wireframes, UI designs, and optional clickable prototype.</p>
+    </div>
+
+    <div class="phase">
+      <h3>Phase 3 — Development</h3>
+      <p>The development phase may include the following modules depending on scope:</p>
+      <ul>
+        <li>User authentication and account management</li>
+        <li>Customer-specific product catalog</li>
+        <li>Search, filters, and categories</li>
+        <li>Cart and checkout flow</li>
+        <li>Reorder from previous orders</li>
+        <li>Order history and status tracking</li>
+        <li>Delivery / pickup scheduling</li>
+        <li>Admin management for customers, products, pricing, and orders</li>
+        <li>Reports and operational dashboards</li>
+        <li>Payment gateway integration if applicable</li>
+        <li>Accounting / inventory / ERP integrations if applicable</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <h3>Phase 4 — Testing and Launch</h3>
+      <ul>
+        <li>QA testing</li>
+        <li>Bug fixing</li>
+        <li>User acceptance testing</li>
+        <li>Deployment and launch support</li>
+      </ul>
+      <p><strong>Deliverables:</strong> Production-ready application deployment and launch support.</p>
+    </div>
+
+    <h2>5. Example MVP Scope</h2>
+    <p>A recommended MVP for a wholesale ordering platform may include:</p>
+    <ul>
+      <li>Customer login</li>
+      <li>Product catalog browsing</li>
+      <li>Customer-specific pricing</li>
+      <li>Cart and order placement</li>
+      <li>Reorder previous orders</li>
+      <li>Order history</li>
+      <li>Admin dashboard</li>
+      <li>Product management</li>
+      <li>Customer management</li>
+      <li>Order management</li>
+    </ul>
+    <p>Optional features such as native mobile apps, advanced route delivery logic, barcode scanning, and ERP sync can be planned as future phases.</p>
+
+    <h2>6. Out of Scope</h2>
+    <p>Unless specifically included in the final scope, the following items are considered out of scope:</p>
+    <ul>
+      <li>Custom ERP development</li>
+      <li>Advanced warehouse management features</li>
+      <li>Marketplace or multi-vendor functionality</li>
+      <li>Route optimization engines</li>
+      <li>Complex loyalty or referral systems</li>
+      <li>Multilingual implementation</li>
+      <li>Additional integrations not listed in the approved scope</li>
+      <li>Post-launch features beyond agreed support/warranty terms</li>
+    </ul>
+
+    <h2>7. Assumptions</h2>
+    <ul>
+      <li>The client will provide timely approvals, feedback, and decision-making</li>
+      <li>The client will supply branding assets, product data, pricing logic, and required business rules</li>
+      <li>Any third-party systems to be integrated will have accessible APIs or usable export/import methods</li>
+      <li>Project estimates are based on the agreed scope at the time of approval</li>
+      <li>Scope changes may impact cost and delivery schedule</li>
+    </ul>
+
+    <h2>8. Deliverables</h2>
+    <ul>
+      <li>Requirements and planning document</li>
+      <li>UI/UX designs</li>
+      <li>Web application</li>
+      <li>Mobile app(s), if included</li>
+      <li>Admin dashboard</li>
+      <li>Deployment support</li>
+      <li>Basic training or handover documentation</li>
+    </ul>
+
+    <h2>9. Timeline</h2>
+    <p>Estimated timeline: <strong>[Insert estimated duration]</strong></p>
+    <ul>
+      <li>Discovery: 1–2 weeks</li>
+      <li>Design: 2–4 weeks</li>
+      <li>Development: 8–16+ weeks</li>
+      <li>Testing and Launch: 2–3 weeks</li>
+    </ul>
+    <p>The final timeline depends on scope complexity, integrations, number of platforms, and client feedback turnaround time.</p>
+
+    <h2>10. Commercials / Pricing</h2>
+
+    <div class="pricing-box">
+      <h3>Option A — Fixed Price</h3>
+      <p>Total Project Cost: <strong>$[Insert Amount]</strong></p>
+      <p>Suggested payment schedule:</p>
+      <ul>
+        <li>30% upfront</li>
+        <li>30% on design approval</li>
+        <li>30% on development completion</li>
+        <li>10% on launch</li>
+      </ul>
+    </div>
+
+    <div class="pricing-box">
+      <h3>Option B — Phased Pricing</h3>
+      <ul>
+        <li>Discovery Phase: $[Insert Amount]</li>
+        <li>Design Phase: $[Insert Amount]</li>
+        <li>Development Phase: $[Insert Amount]</li>
+        <li>Testing / Launch Phase: $[Insert Amount]</li>
+      </ul>
+    </div>
+
+    <div class="pricing-box">
+      <h3>Option C — Hourly / Retainer</h3>
+      <ul>
+        <li>Hourly Rate: $[Insert Rate] / hour</li>
+        <li>Estimated Hours: [Insert Range]</li>
+        <li>Monthly Retainer: $[Insert Amount]</li>
+      </ul>
+    </div>
+
+    <h2>11. Change Requests</h2>
+    <p>
+      Any additional features, revised workflows, extra integrations, or substantial design/development changes outside the approved scope will be treated as change requests and may impact both cost and timeline.
+    </p>
+
+    <h2>12. Support and Maintenance</h2>
+    <p>Optional post-launch support may include:</p>
+    <ul>
+      <li>Bug fixes</li>
+      <li>Security updates</li>
+      <li>Monitoring and backups</li>
+      <li>Minor enhancements</li>
+      <li>Technical support</li>
+    </ul>
+    <p>Example support plans:</p>
+    <ul>
+      <li>Basic Support: $[Insert Amount] / month</li>
+      <li>Standard Support: $[Insert Amount] / month</li>
+      <li>Premium Support: $[Insert Amount] / month</li>
+    </ul>
+
+    <h2>13. Client Responsibilities</h2>
+    <ul>
+      <li>Provide product catalog and pricing data</li>
+      <li>Provide business rules and workflow clarification</li>
+      <li>Provide branding and content assets</li>
+      <li>Participate in testing and feedback cycles</li>
+      <li>Assign a main point of contact for approvals and communication</li>
+    </ul>
+
+    <h2>14. Acceptance Criteria</h2>
+    <p>The project will be considered accepted when:</p>
+    <ul>
+      <li>The agreed scope has been delivered</li>
+      <li>Testing has been completed</li>
+      <li>Critical issues have been resolved</li>
+      <li>The client has reviewed and approved the deliverables</li>
+      <li>The application has been deployed as agreed</li>
+    </ul>
+
+    <h2>15. Next Steps</h2>
+    <ol>
+      <li>Conduct discovery meeting</li>
+      <li>Confirm requirements and MVP</li>
+      <li>Finalize proposal, timeline, and budget</li>
+      <li>Approve scope and sign agreement</li>
+      <li>Kick off the project</li>
+    </ol>
+
+    <h2>16. Approval</h2>
+    <div class="signature-grid">
+      <div class="sign-box">
+        <strong>Client Approval</strong><br /><br />
+        Name:<span class="line"></span>
+        Signature:<span class="line"></span>
+        Date:<span class="line"></span>
+      </div>
+      <div class="sign-box">
+        <strong>Service Provider</strong><br /><br />
+        Name:<span class="line"></span>
+        Signature:<span class="line"></span>
+        Date:<span class="line"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
