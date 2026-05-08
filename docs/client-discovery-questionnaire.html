@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Discovery Questionnaire - Wholesale Ordering App</title>
+  <style>
+    :root {
+      --primary: #1f4b99;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #d1d5db;
+      --bg: #f8fafc;
+      --section: #eef4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 960px;
+      margin: 32px auto;
+      background: #fff;
+      padding: 40px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 {
+      color: var(--primary);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .field {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 54px;
+    }
+    .section {
+      margin-top: 28px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .section-header {
+      background: var(--section);
+      color: var(--primary);
+      padding: 12px 16px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .section-body {
+      padding: 18px 16px 8px;
+    }
+    ol { padding-left: 22px; }
+    li { margin-bottom: 14px; }
+    .line {
+      display: block;
+      border-bottom: 1px solid var(--border);
+      min-height: 24px;
+      margin-top: 6px;
+    }
+    .checkbox-group {
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px 18px;
+    }
+    .checkbox-group label { display: block; }
+    .footer-note {
+      margin-top: 28px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--primary);
+      background: #f9fbff;
+      color: var(--muted);
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        max-width: none;
+      }
+      .section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Client Discovery Questionnaire</h1>
+    <div class="subtitle">Wholesale Ordering App for Indian Food and Non-Food Products</div>
+
+    <div class="meta">
+      <div class="field"><strong>Client Name:</strong></div>
+      <div class="field"><strong>Meeting Date:</strong></div>
+      <div class="field"><strong>Prepared By:</strong></div>
+      <div class="field"><strong>Company:</strong></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">A. Business Overview</div>
+      <div class="section-body">
+        <ol>
+          <li>Tell us about your business.<span class="line"></span></li>
+          <li>What products do you sell?<span class="line"></span></li>
+          <li>Who are your typical customers?<span class="line"></span></li>
+          <li>Which locations or regions do you serve?<span class="line"></span></li>
+          <li>What are your main business goals for this app?<span class="line"></span></li>
+          <li>What problems are you trying to solve with this app?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">B. Current Order Process</div>
+      <div class="section-body">
+        <ol start="7">
+          <li>
+            How do customers place orders today?
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Phone</label>
+              <label><input type="checkbox" /> WhatsApp</label>
+              <label><input type="checkbox" /> Email</label>
+              <label><input type="checkbox" /> Sales Rep</label>
+              <label><input type="checkbox" /> Website</label>
+              <label><input type="checkbox" /> Other</label>
+            </div>
+          </li>
+          <li>How are orders managed internally today?<span class="line"></span></li>
+          <li>What is working well in the current process?<span class="line"></span></li>
+          <li>What are the biggest pain points?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">C. Customers and User Accounts</div>
+      <div class="section-body">
+        <ol start="11">
+          <li>Who will use the app?<span class="line"></span></li>
+          <li>Will customers be businesses, individuals, or both?<span class="line"></span></li>
+          <li>Does each customer account need multiple users or logins?<span class="line"></span></li>
+          <li>Should new customers be able to register themselves?<span class="line"></span></li>
+          <li>Do customer accounts need manual approval?<span class="line"></span></li>
+          <li>Will different customers have different pricing?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">D. Product Catalog</div>
+      <div class="section-body">
+        <ol start="17">
+          <li>Approximately how many products will be listed?<span class="line"></span></li>
+          <li>How should products be organized?<span class="line"></span></li>
+          <li>Do products have variants such as size, weight, flavor, or pack quantity?<span class="line"></span></li>
+          <li>Do you have product photos and descriptions ready?<span class="line"></span></li>
+          <li>Do you need SKU or barcode support?<span class="line"></span></li>
+          <li>Do you sell by unit, case, carton, or pallet?<span class="line"></span></li>
+          <li>Are minimum order quantities required?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">E. Pricing</div>
+      <div class="section-body">
+        <ol start="24">
+          <li>Is pricing the same for all customers?<span class="line"></span></li>
+          <li>Do some customers have custom pricing?<span class="line"></span></li>
+          <li>Do you need tiered or volume pricing?<span class="line"></span></li>
+          <li>Do prices change frequently?<span class="line"></span></li>
+          <li>Should pricing only be visible after login?<span class="line"></span></li>
+          <li>Do you offer discounts, promotions, or bundle deals?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">F. Ordering Workflow</div>
+      <div class="section-body">
+        <ol start="30">
+          <li>What should the ordering process look like from start to finish?<span class="line"></span></li>
+          <li>
+            Should customers be able to:
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Reorder previous orders</label>
+              <label><input type="checkbox" /> Save favorites</label>
+              <label><input type="checkbox" /> Create recurring orders</label>
+              <label><input type="checkbox" /> Request quotes</label>
+              <label><input type="checkbox" /> Edit orders after placing them</label>
+            </div>
+          </li>
+          <li>Do you allow backorders?<span class="line"></span></li>
+          <li>Should substitute products be suggested when items are unavailable?<span class="line"></span></li>
+          <li>Do you require order approval before confirmation?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">G. Delivery / Pickup</div>
+      <div class="section-body">
+        <ol start="35">
+          <li>Do you offer delivery, pickup, or both?<span class="line"></span></li>
+          <li>What areas do you deliver to?<span class="line"></span></li>
+          <li>Do customers choose delivery dates or times?<span class="line"></span></li>
+          <li>Do you have route-based delivery schedules?<span class="line"></span></li>
+          <li>How are delivery charges calculated?<span class="line"></span></li>
+          <li>Should customers be able to track order status?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">H. Payments and Billing</div>
+      <div class="section-body">
+        <ol start="41">
+          <li>How do customers pay today?<span class="line"></span></li>
+          <li>Do you want online payments in the app?<span class="line"></span></li>
+          <li>
+            Which payment methods do you want to support?
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Credit / Debit Card</label>
+              <label><input type="checkbox" /> ACH / Bank Transfer</label>
+              <label><input type="checkbox" /> Cash on Delivery</label>
+              <label><input type="checkbox" /> Invoice / Credit Terms</label>
+              <label><input type="checkbox" /> Other</label>
+            </div>
+          </li>
+          <li>Do customers have payment terms such as Net 15 or Net 30?<span class="line"></span></li>
+          <li>Do you need credit limits per customer?<span class="line"></span></li>
+          <li>Should customers see invoices, statements, and payment history?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">I. Inventory and Internal Systems</div>
+      <div class="section-body">
+        <ol start="47">
+          <li>How do you currently track inventory?<span class="line"></span></li>
+          <li>
+            Do you use any software today?
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> QuickBooks</label>
+              <label><input type="checkbox" /> ERP</label>
+              <label><input type="checkbox" /> Warehouse Software</label>
+              <label><input type="checkbox" /> Excel</label>
+              <label><input type="checkbox" /> Other</label>
+            </div>
+          </li>
+          <li>Should the app sync with inventory or accounting systems?<span class="line"></span></li>
+          <li>Do you need real-time stock visibility?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">J. Admin and Staff Features</div>
+      <div class="section-body">
+        <ol start="51">
+          <li>Who on your team will manage the system?<span class="line"></span></li>
+          <li>
+            Do you need different staff roles?
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Admin</label>
+              <label><input type="checkbox" /> Sales Rep</label>
+              <label><input type="checkbox" /> Warehouse</label>
+              <label><input type="checkbox" /> Finance</label>
+              <label><input type="checkbox" /> Customer Support</label>
+            </div>
+          </li>
+          <li>Do sales reps need to place orders on behalf of customers?<span class="line"></span></li>
+          <li>What reports do you need?<span class="line"></span></li>
+          <li>
+            Do you need alerts for:
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Low Stock</label>
+              <label><input type="checkbox" /> Large Orders</label>
+              <label><input type="checkbox" /> Overdue Payments</label>
+              <label><input type="checkbox" /> Failed Payments</label>
+              <label><input type="checkbox" /> Delivery Issues</label>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">K. Platform Requirements</div>
+      <div class="section-body">
+        <ol start="56">
+          <li>
+            Do you need:
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Web App</label>
+              <label><input type="checkbox" /> Mobile App</label>
+              <label><input type="checkbox" /> Both</label>
+            </div>
+          </li>
+          <li>Which devices do your customers mainly use?<span class="line"></span></li>
+          <li>Is a mobile-friendly web app enough for phase 1?<span class="line"></span></li>
+          <li>
+            Do you need mobile-specific features such as:
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Push Notifications</label>
+              <label><input type="checkbox" /> Barcode Scanning</label>
+              <label><input type="checkbox" /> Camera Uploads</label>
+              <label><input type="checkbox" /> Offline Access</label>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">L. Branding and Design</div>
+      <div class="section-body">
+        <ol start="60">
+          <li>Do you already have branding guidelines?<span class="line"></span></li>
+          <li>Do you have a logo, colors, fonts, and brand assets?<span class="line"></span></li>
+          <li>Do you have examples of apps or websites you like?<span class="line"></span></li>
+          <li>Do you want a simple functional design or a premium custom design?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">M. Timeline and Launch</div>
+      <div class="section-body">
+        <ol start="64">
+          <li>When do you want to launch?<span class="line"></span></li>
+          <li>Is there a hard deadline?<span class="line"></span></li>
+          <li>Do you want an MVP first?<span class="line"></span></li>
+          <li>What features are must-have for launch?<span class="line"></span></li>
+          <li>What features can wait until phase 2?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">N. Budget and Engagement</div>
+      <div class="section-body">
+        <ol start="69">
+          <li>What budget range do you have in mind?<span class="line"></span></li>
+          <li>
+            Are you looking for:
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Fixed-Price Project</label>
+              <label><input type="checkbox" /> Phased Project</label>
+              <label><input type="checkbox" /> Hourly Development</label>
+              <label><input type="checkbox" /> Ongoing Retainer</label>
+            </div>
+          </li>
+          <li>Who is the final decision-maker?<span class="line"></span></li>
+          <li>How quickly can feedback and approvals be provided?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">O. Maintenance and Support</div>
+      <div class="section-body">
+        <ol start="73">
+          <li>Do you need ongoing maintenance after launch?<span class="line"></span></li>
+          <li>Do you need hosting and deployment included?<span class="line"></span></li>
+          <li>Do you need training for your staff?<span class="line"></span></li>
+          <li>Who will manage product updates, pricing updates, and customer accounts after launch?<span class="line"></span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Tip: Print this document to PDF or bring it to your client meeting and fill it out live. This questionnaire is designed to help define scope, identify MVP features, and avoid missing critical business requirements.
+    </div>
+  </div>
+</body>
+</html>
